@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 694.167 s <<< FAILURE! - in TestSuite
+searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 206.222 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:75)
+
+searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 124.605 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	State is not matched expected [CA] but found [PA]
+	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:118)
+
+searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 11.746 s  <<< FAILURE!
+java.lang.AssertionError: No records found expected [1000600012] but found [Player not found]
+	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:76)
+
