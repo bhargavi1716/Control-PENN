@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="IGT Control Test Suite" duration-ms="692152" started-at="2020-05-22T06:53:47Z" finished-at="2020-05-22T07:05:19Z">
+  <suite name="IGT Control Test Suite" duration-ms="711008" started-at="2020-05-22T11:34:38Z" finished-at="2020-05-22T11:46:29Z">
     <groups>
     </groups>
-    <test name="IGT Control regression Test" duration-ms="692152" started-at="2020-05-22T06:53:47Z" finished-at="2020-05-22T07:05:19Z">
+    <test name="IGT Control regression Test" duration-ms="711008" started-at="2020-05-22T11:34:38Z" finished-at="2020-05-22T11:46:29Z">
       <class name="com.qa.control.tests.LoginTest">
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.control.tests.LoginTest@3d9fc57a]" name="verifyLoginPageTitleTest" duration-ms="9" started-at="2020-05-22T07:04:15Z" finished-at="2020-05-22T07:04:15Z">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.control.tests.LoginTest@5a6d5a8f]" name="verifyLoginPageTitleTest" duration-ms="14" started-at="2020-05-22T11:45:20Z" finished-at="2020-05-22T11:45:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.qa.control.tests.LoginTest@3d9fc57a]" name="loginTest" duration-ms="61516" started-at="2020-05-22T07:04:15Z" finished-at="2020-05-22T07:05:16Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.qa.control.tests.LoginTest@5a6d5a8f]" name="loginTest" duration-ms="66827" started-at="2020-05-22T11:45:20Z" finished-at="2020-05-22T11:46:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- com.qa.control.tests.LoginTest -->
       <class name="com.qa.control.tests.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.HomePageTest@d4ab71a]" name="setup" is-config="true" duration-ms="153629" started-at="2020-05-22T06:53:47Z" finished-at="2020-05-22T06:56:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.HomePageTest@4a67318f]" name="setup" is-config="true" duration-ms="76153" started-at="2020-05-22T11:34:38Z" finished-at="2020-05-22T11:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.LoginTest@3d9fc57a]" name="setup" is-config="true" duration-ms="16674" started-at="2020-05-22T06:56:20Z" finished-at="2020-05-22T06:56:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.LoginTest@5a6d5a8f]" name="setup" is-config="true" duration-ms="14364" started-at="2020-05-22T11:35:54Z" finished-at="2020-05-22T11:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.PlayersTest@3b4ef7]" name="setup" is-config="true" duration-ms="107224" started-at="2020-05-22T06:56:37Z" finished-at="2020-05-22T06:58:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.PlayersTest@315ba14a]" name="setup" is-config="true" duration-ms="116814" started-at="2020-05-22T11:36:09Z" finished-at="2020-05-22T11:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLinksTest()[pri:0, instance:com.qa.control.tests.HomePageTest@d4ab71a]" name="verifyLinksTest" duration-ms="7063" started-at="2020-05-22T06:58:24Z" finished-at="2020-05-22T06:58:31Z">
+        <test-method status="PASS" signature="verifyLinksTest()[pri:0, instance:com.qa.control.tests.HomePageTest@4a67318f]" name="verifyLinksTest" duration-ms="7961" started-at="2020-05-22T11:38:05Z" finished-at="2020-05-22T11:38:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinksTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.control.tests.HomePageTest@d4ab71a]" name="tearDown" is-config="true" duration-ms="799" started-at="2020-05-22T07:05:16Z" finished-at="2020-05-22T07:05:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.control.tests.HomePageTest@4a67318f]" name="tearDown" is-config="true" duration-ms="849" started-at="2020-05-22T11:46:27Z" finished-at="2020-05-22T11:46:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.control.tests.LoginTest@3d9fc57a]" name="tearDown" is-config="true" duration-ms="795" started-at="2020-05-22T07:05:17Z" finished-at="2020-05-22T07:05:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.control.tests.LoginTest@5a6d5a8f]" name="tearDown" is-config="true" duration-ms="832" started-at="2020-05-22T11:46:27Z" finished-at="2020-05-22T11:46:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.control.tests.PlayersTest@3b4ef7]" name="teardown" is-config="true" duration-ms="925" started-at="2020-05-22T07:05:18Z" finished-at="2020-05-22T07:05:19Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.control.tests.PlayersTest@315ba14a]" name="teardown" is-config="true" duration-ms="811" started-at="2020-05-22T11:46:28Z" finished-at="2020-05-22T11:46:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.qa.control.tests.HomePageTest -->
       <class name="com.qa.control.tests.PlayersTest">
-        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@3b4ef7]" name="searchPlayerTest" duration-ms="204861" started-at="2020-05-22T06:58:32Z" data-provider="PlayersDM" finished-at="2020-05-22T07:01:57Z">
+        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@315ba14a]" name="searchPlayerTest" duration-ms="11500" started-at="2020-05-22T11:38:14Z" data-provider="PlayersDM" finished-at="2020-05-22T11:38:26Z">
           <params>
             <param index="0">
               <value>
@@ -125,13 +125,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No records found expected [1000500024] but found [Player not found]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.control.util.JavaScriptUtil.flash(JavaScriptUtil.java:17)
-at com.qa.control.util.ElementActions.clickOnElement(ElementActions.java:64)
-at com.qa.control.pages.PlayersPage.playerSearch(PlayersPage.java:80)
-at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:75)
+              <![CDATA[java.lang.AssertionError: No records found expected [1000500024] but found [Player not found]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,11 +167,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPlayerTest -->
-        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@3b4ef7]" name="searchPlayerTest" duration-ms="123802" started-at="2020-05-22T07:01:58Z" data-provider="PlayersDM" finished-at="2020-05-22T07:04:02Z">
+        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@315ba14a]" name="searchPlayerTest" duration-ms="205264" started-at="2020-05-22T11:38:27Z" data-provider="PlayersDM" finished-at="2020-05-22T11:41:52Z">
           <params>
             <param index="0">
               <value>
@@ -244,16 +249,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-State is not matched expected [CA] but found [PA]]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-State is not matched expected [CA] but found [PA]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:118)
+              <![CDATA[java.lang.NullPointerException
+at com.qa.control.util.JavaScriptUtil.flash(JavaScriptUtil.java:17)
+at com.qa.control.util.ElementActions.clickOnElement(ElementActions.java:64)
+at com.qa.control.pages.PlayersPage.playerSearch(PlayersPage.java:80)
+at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -284,11 +286,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPlayerTest -->
-        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@3b4ef7]" name="searchPlayerTest" duration-ms="10995" started-at="2020-05-22T07:04:03Z" data-provider="PlayersDM" finished-at="2020-05-22T07:04:14Z">
+        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@315ba14a]" name="searchPlayerTest" duration-ms="205001" started-at="2020-05-22T11:41:53Z" data-provider="PlayersDM" finished-at="2020-05-22T11:45:18Z">
           <params>
             <param index="0">
               <value>
@@ -366,18 +368,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[No records found expected [1000600012] but found [Player not found]]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: No records found expected [1000600012] but found [Player not found]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:76)
+              <![CDATA[java.lang.NullPointerException
+at com.qa.control.util.JavaScriptUtil.flash(JavaScriptUtil.java:17)
+at com.qa.control.util.ElementActions.clickOnElement(ElementActions.java:64)
+at com.qa.control.pages.PlayersPage.playerSearch(PlayersPage.java:80)
+at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:79)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -408,7 +405,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPlayerTest -->

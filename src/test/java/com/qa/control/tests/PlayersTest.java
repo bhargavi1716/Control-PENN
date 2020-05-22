@@ -7,16 +7,20 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.qa.control.base.BasePage;
+import com.qa.control.listeners.TestAllureListener;
 import com.qa.control.pages.HomePage;
 import com.qa.control.pages.LoginPage;
 import com.qa.control.pages.PlayersPage;
 import com.qa.control.util.CommonUtil;
 import com.qa.control.util.ExcelUtil;
 
+
+@Listeners({TestAllureListener.class})
 public class PlayersTest {
 	
 	WebDriver driver;

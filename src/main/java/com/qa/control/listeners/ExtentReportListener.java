@@ -24,7 +24,7 @@ import com.qa.control.base.BasePage;
 public class ExtentReportListener extends BasePage implements ITestListener {
 
 	private static final String OUTPUT_FOLDER = "./build/";
-	private static final String FILE_NAME = "TestExecutionReport" + System.currentTimeMillis() + ".html";
+	private static final String FILE_NAME = "TestExecutionReport.html";
 
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
