@@ -52,6 +52,7 @@ public class ElementActions extends BasePage{
 			e.printStackTrace();
 			e.getMessage();
 	    }
+		// System.out.println("Size = "+size);
 		return size;	
 		}
 	

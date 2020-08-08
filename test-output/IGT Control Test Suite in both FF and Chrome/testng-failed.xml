@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [IGT Control Test Suite in both FF and Chrome]">
+  <listeners>
+    <listener class-name="com.qa.control.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.control.listeners.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" name="IGT Control Regression Test(failed)">
+    <classes>
+      <class name="com.qa.control.tests.PlayersTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="searchPlayerTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qa.control.tests.PlayersTest -->
+    </classes>
+  </test> <!-- IGT Control Regression Test(failed) -->
+</suite> <!-- Failed suite [IGT Control Test Suite in both FF and Chrome] -->

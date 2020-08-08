@@ -16,34 +16,40 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+
+/**
+ * @author bkongara
+ *
+ */
 public class BasePage {
 
 	//WebDriver driver;
 	Properties prop;
+	public OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<WebDriver>();
 
-
+	public static synchronized WebDriver getDriver() {
+		return tldriver.get();
+	}
+	
 	public WebDriver initialize_driver(Properties prop) {
 
 		String browserName = prop.getProperty("browser");
+		//System.out.println("browser = "+prop.getProperty("browser"));
 
 		if (browserName.equals("chrome")) {
 			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\bkongara\\Downloads\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\bkongara\\OneDrive - IGT PLC\\Desktop\\Documents\\chromedriver_win32\\chromedriver.exe");
 			tldriver.set(new ChromeDriver());
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\bkongara\\Downloads\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\bkongara\\OneDrive - IGT PLC\\Desktop\\geckodriver.exe");
 			tldriver.set(new FirefoxDriver());
-		} else if (browserName.equals("ie")) {
-			System.setProperty("webdriver.ie.driver", "");
-			tldriver.set(new InternetExplorerDriver());
 		} else {
 			System.out.println("no browser is defined");
 		}
 
 		//getDriver().manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIME_OUT, TimeUnit.SECONDS);
-		 
-		
+		 	
 		getDriver().manage().deleteAllCookies();
 		
 		if (prop.getProperty("fullscreenmode").equals("yes")) {
@@ -55,10 +61,7 @@ public class BasePage {
 		return getDriver();
 	}
 	
-	public static synchronized WebDriver getDriver() {
-		return tldriver.get();
-	}
-
+	
 	public Properties initialize_properties() {
 		prop = new Properties();
 		try {

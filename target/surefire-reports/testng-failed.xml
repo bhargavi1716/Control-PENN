@@ -5,15 +5,15 @@
     <listener class-name="com.qa.control.listeners.ExtentReportListener"/>
     <listener class-name="com.qa.control.listeners.TestAllureListener"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="IGT Control regression Test(failed)">
+  <test thread-count="5" verbose="0" name="IGT Control Regression Test3(failed)">
     <classes>
       <class name="com.qa.control.tests.PlayersTest">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="searchPlayerTest" invocation-numbers="0 1 2"/>
+          <include name="searchPlayerTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.qa.control.tests.PlayersTest -->
     </classes>
-  </test> <!-- IGT Control regression Test(failed) -->
+  </test> <!-- IGT Control Regression Test3(failed) -->
 </suite> <!-- Failed suite [IGT Control Test Suite] -->

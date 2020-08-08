@@ -1,29 +1,506 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89375" started-at="2020-05-22T08:51:13Z" finished-at="2020-05-22T08:52:42Z">
+  <suite name="Default suite" duration-ms="242495" started-at="2020-08-08T10:03:12Z" finished-at="2020-08-08T10:07:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89375" started-at="2020-05-22T08:51:13Z" finished-at="2020-05-22T08:52:42Z">
-      <class name="com.qa.control.tests.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.LoginTest@5dbe30be]" name="setup" is-config="true" duration-ms="14858" started-at="2020-05-22T08:51:13Z" finished-at="2020-05-22T08:51:27Z">
+    <test name="Default test" duration-ms="242495" started-at="2020-08-08T10:03:12Z" finished-at="2020-08-08T10:07:15Z">
+      <class name="com.qa.control.tests.PlayersTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="setup" is-config="true" duration-ms="85765" started-at="2020-08-08T10:03:12Z" finished-at="2020-08-08T10:04:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.control.tests.LoginTest@5dbe30be]" name="verifyLoginPageTitleTest" duration-ms="42" started-at="2020-05-22T08:51:27Z" finished-at="2020-05-22T08:51:28Z">
+        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="searchPlayerTest" duration-ms="11293" started-at="2020-08-08T10:04:39Z" data-provider="PlayersDM" finished-at="2020-08-08T10:04:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000600015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FOUREE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SIT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sit2004@mailinator.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[sit2004]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No records found expected [1000600015] but found [Player not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No records found expected [1000600015] but found [Player not found]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.qa.control.tests.LoginTest@5dbe30be]" name="loginTest" duration-ms="73448" started-at="2020-05-22T08:51:28Z" finished-at="2020-05-22T08:52:41Z">
+        </test-method> <!-- searchPlayerTest -->
+        <test-method status="FAIL" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="searchPlayerTest" duration-ms="11027" started-at="2020-08-08T10:04:51Z" data-provider="PlayersDM" finished-at="2020-08-08T10:05:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000050002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[JONES]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LUCY]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[anjaneyulu.bandreddy@igt.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[anjisit2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No records found expected [1000050002] but found [Player not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No records found expected [1000050002] but found [Player not found]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.control.tests.LoginTest@5dbe30be]" name="tearDown" is-config="true" duration-ms="863" started-at="2020-05-22T08:52:41Z" finished-at="2020-05-22T08:52:42Z">
+        </test-method> <!-- searchPlayerTest -->
+        <test-method status="PASS" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="searchPlayerTest" duration-ms="44015" started-at="2020-08-08T10:05:02Z" data-provider="PlayersDM" finished-at="2020-08-08T10:05:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000012]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FOUREE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SIT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sit2004@mailinator.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[sit2004]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.control.tests.LoginTest -->
+        </test-method> <!-- searchPlayerTest -->
+        <test-method status="PASS" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="searchPlayerTest" duration-ms="44092" started-at="2020-08-08T10:05:46Z" data-provider="PlayersDM" finished-at="2020-08-08T10:06:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WILSON]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LIANA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sit2qa4@mailinator.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[U]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[sit2qa4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[OK]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPlayerTest -->
+        <test-method status="PASS" signature="searchPlayerTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="searchPlayerTest" duration-ms="44184" started-at="2020-08-08T10:06:30Z" data-provider="PlayersDM" finished-at="2020-08-08T10:07:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000008]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TWO]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SIT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sit2002@mailinator.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[sit2002]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[PA]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPlayerTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.qa.control.tests.PlayersTest@2c1b9e4b]" name="teardown" is-config="true" duration-ms="851" started-at="2020-08-08T10:07:14Z" finished-at="2020-08-08T10:07:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.control.tests.PlayersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-<suite name="IGT Control Test Suite" verbose="2">
+<suite name="IGT Control Test Suite" verbose="1" >
 	<listeners>
 		<listener class-name="com.qa.control.listeners.ExtentReportListener" />
 		<listener class-name="com.qa.control.listeners.TestAllureListener" />
 	</listeners>
 
-	<test name="IGT Control regression Test">
+  <test name="IGT Control Regression Test">
 		<classes>
 			<class name="com.qa.control.tests.LoginTest" />
-			<class name="com.qa.control.tests.HomePageTest" />
+			 <!--  <class name="com.qa.control.tests.HomePageTest" />
 			<class name="com.qa.control.tests.PlayersTest" />
-			<!-- <class name="com.qa.control.tests.GamesTest" /> -->
+			<class name="com.qa.control.tests.GamesTest" /> -->
+		</classes>
+	</test>
+	
+	<test name="IGT Control Regression Test2">
+		<classes>
+			<class name="com.qa.control.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="IGT Control Regression Test3">
+		<classes>
+			<class name="com.qa.control.tests.PlayersTest" />
 		</classes>
 	</test>
 </suite>

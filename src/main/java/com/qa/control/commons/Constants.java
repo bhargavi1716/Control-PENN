@@ -11,7 +11,7 @@ public class Constants {
 	public static String USER_DETAIL_VIEW_SUB = "Responsible Game";
 
 	public final static int PAGE_LOAD_TIME_OUT = 20;
-	public static int DEFAULT_EXPLICIT_WAIT = 100;
+	public static int DEFAULT_EXPLICIT_WAIT = 20;
 	
 	public static String DATA_SHEET_PATH = "C:\\Users\\bkongara\\Selenium\\Control-PENN\\src\\main\\java\\com\\qa\\control\\testdata\\PlayersDM.xlsx";
 

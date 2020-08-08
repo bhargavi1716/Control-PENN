@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.control.base.BasePage;
 import com.qa.control.commons.Constants;
-import com.qa.control.listeners.TestAllureListener;
 import com.qa.control.pages.LoginPage;
 
 import io.qameta.allure.Description;
@@ -19,7 +19,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
 
-@Listeners({TestAllureListener.class})
+//@Listeners({TestAllureListener.class})
 public class LoginTest {
 	
 	BasePage basePage;
@@ -29,11 +29,13 @@ public class LoginTest {
 	WebDriver driver;
 	
 	@BeforeTest
+
 	public void setup() {
+	
 		basePage = new BasePage();
-		prop = basePage.initialize_properties();
+		prop = basePage.initialize_properties();		
 		driver = basePage.initialize_driver(prop);
-		driver.get(prop.getProperty("url"));
+	    driver.get(prop.getProperty("url"));
 		//CommonUtil.MediumWait();
 		loginPage = new LoginPage(driver);
 	}
@@ -57,6 +59,7 @@ public class LoginTest {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
+
 	}
 	
 }

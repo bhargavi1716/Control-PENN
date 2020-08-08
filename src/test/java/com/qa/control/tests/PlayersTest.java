@@ -7,12 +7,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.qa.control.base.BasePage;
-import com.qa.control.listeners.TestAllureListener;
 import com.qa.control.pages.HomePage;
 import com.qa.control.pages.LoginPage;
 import com.qa.control.pages.PlayersPage;
@@ -20,7 +20,8 @@ import com.qa.control.util.CommonUtil;
 import com.qa.control.util.ExcelUtil;
 
 
-@Listeners({TestAllureListener.class})
+//@Listeners({TestAllureListener.class})
+
 public class PlayersTest {
 	
 	WebDriver driver;
@@ -33,6 +34,7 @@ public class PlayersTest {
 	
 	@BeforeTest
 	public void setup() {
+	
 		basePage = new BasePage();
 		prop = basePage.initialize_properties();
 		driver = basePage.initialize_driver(prop);
@@ -45,7 +47,7 @@ public class PlayersTest {
 		CommonUtil.MediumWait();
 	}
 	
-	@DataProvider(name = "PlayersDM")
+	@DataProvider(name = "PlayersDM") //Data Provider
 	public Object[][] getPlayersTestData() {
 		Object playersData[][] = ExcelUtil.getTestData("PlayersInfo");
 		return playersData;
@@ -74,7 +76,9 @@ public class PlayersTest {
 	public void searchPlayerTest(String USER_ID,String LAST_NAME,String FIRST_NAME,String EMAIL_ADDR,
 			String GENDER,String USER_NAME,String COUNTRY,String STATE,String BANK_ACCOUNT_STATUS,
 			String LOGIN_STATUS,String WAGER_STATUS,String WALLET_STATUS, String DW_DAILY_LIMIT,String DW_WEEKLY_LIMIT,String DW_MONTHLY_LIMIT) {
-
+        
+		//System.out.println(USER_ID);
+        
 		SoftAssert sa = new SoftAssert();
 		String foundContractIdTest =playersPage.playerSearch(USER_ID, LOGIN_STATUS);
 		Assert.assertEquals(foundContractIdTest,USER_ID,"No records found");

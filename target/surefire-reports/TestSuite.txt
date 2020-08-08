@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 729.722 s <<< FAILURE! - in TestSuite
-searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 12.685 s  <<< FAILURE!
-java.lang.AssertionError: No records found expected [1000500024] but found [Player not found]
-	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:80)
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 394.148 s <<< FAILURE! - in TestSuite
+searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 11.011 s  <<< FAILURE!
+java.lang.AssertionError: No records found expected [1000600015] but found [Player not found]
+	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:84)
 
-searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 206.481 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:79)
-
-searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 292.722 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:79)
+searchPlayerTest(com.qa.control.tests.PlayersTest)  Time elapsed: 11.025 s  <<< FAILURE!
+java.lang.AssertionError: No records found expected [1000050002] but found [Player not found]
+	at com.qa.control.tests.PlayersTest.searchPlayerTest(PlayersTest.java:84)
 

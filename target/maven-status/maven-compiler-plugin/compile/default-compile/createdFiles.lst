@@ -3,6 +3,7 @@ com\qa\control\base\BasePage.class
 com\qa\control\util\ExcelUtil.class
 com\qa\control\listeners\TestAllureListener.class
 com\qa\control\pages\PlayersPage.class
+com\qa\control\base\OptionsManager.class
 com\qa\control\util\ElementActions.class
 com\qa\control\listeners\ExtentReportListener.class
 com\qa\control\util\CommonUtil.class

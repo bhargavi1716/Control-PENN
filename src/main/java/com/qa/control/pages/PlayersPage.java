@@ -21,6 +21,7 @@ public class PlayersPage extends BasePage{
 	By searchResults = By.xpath("//*[@id='select2-search-criteria-results']");
 	By enterValue = By.xpath("//*[@id='value_criteria']");
 	By searchButton = By.xpath("//button[@id='searchButton']");
+	By searchResult = By.xpath("//*[@id=\\\"playerDataTables\\\"]/tbody/tr");
 	
 	//Player Found Details
 	By foundPlayerRow = By.xpath("//td[@class='fullname_pl']");
@@ -73,20 +74,23 @@ public class PlayersPage extends BasePage{
 				elementActions.sendKeysElement(enterValue, USER_ID);
 				elementActions.clickOnElement(searchButton);
 				int size = elementActions.getElements(playerFoundMessage);
-				if (size == 1) {
+//				System.out.println("*****************************");
+//				System.out.println("Size =" + size);
+//			    System.out.println("*****************************");
+				if (size==1){
 					contractIdFound = "Player not found";
-					CommonUtil.MediumWait();
-				}else {
-				elementActions.clickOnElement(foundPlayerRow);
-				foundContractId  = By.xpath(Bxpath + USER_ID + Axpath);
-				contractIdFound =  elementActions.getTextElement(foundContractId);
+					CommonUtil.MediumWait();				
+				}else {					
+					elementActions.clickOnElement(foundPlayerRow);
+					foundContractId  = By.xpath(Bxpath + USER_ID + Axpath);
+					contractIdFound =  elementActions.getTextElement(foundContractId);
 				}		
-				return contractIdFound;					
-			}	
+				return contractIdFound;				
+			}
+			
 			public String verifyLastName() {
 				return elementActions.getTextElement(lastName);
 			}
-			
 			public String verifyFirstName() {
 				return elementActions.getTextElement(firstName);
 			}

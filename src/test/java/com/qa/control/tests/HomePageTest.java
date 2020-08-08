@@ -3,22 +3,21 @@ package com.qa.control.tests;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.qa.control.base.BasePage;
 import com.qa.control.commons.Constants;
-import com.qa.control.listeners.TestAllureListener;
 import com.qa.control.pages.HomePage;
 import com.qa.control.pages.LoginPage;
 import com.qa.control.util.CommonUtil;
 
 
-@Listeners({TestAllureListener.class})
+//@Listeners({TestAllureListener.class})
 public class HomePageTest {
 	
 	BasePage basePage;
@@ -29,7 +28,9 @@ public class HomePageTest {
     WebDriver driver;
 	
 	@BeforeTest
+	
 	public void setup() {
+		
 		basePage = new BasePage();
 		prop = basePage.initialize_properties();
 		driver = basePage.initialize_driver(prop);
@@ -88,6 +89,7 @@ public class HomePageTest {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
+	
 	}
 }
 
